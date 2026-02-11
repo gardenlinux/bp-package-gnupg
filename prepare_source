@@ -1,11 +1,8 @@
 pkg=curl
-version_orig=8.14.1
-version="$version_orig-2"
-git_src -b "debian/$version" "https://salsa.debian.org/debian/curl.git"
+version_orig=2.4.7
+version="$version_orig-21+deb13u1"
+version_suffix=gl1+bp1592
 
-#removing rtmp
-sed -i '/librtmp-dev/d;s/RTMP, //' "$dir/src/debian/control"
-
-version_suffix=gl0~bp1592
+git_src -b "debian/$version" "https://salsa.debian.org/debian/gnupg2.git"
 
 apply_patches debian_fixes

@@ -1,0 +1,11 @@
+--- a/debian/control	2026-02-11 13:32:53.968772462 +0100
++++ b/debian/control	2026-02-11 13:32:45.740533010 +0100
+@@ -43,7 +43,7 @@ Build-Depends-Indep:
+  binutils-multiarch [!amd64 !i386] <!pkg.gnupg2.gpgvonly>,
+  libassuan-mingw-w64-dev (>= 2.5.0) <!pkg.gnupg2.gpgvonly>,
+  libgcrypt-mingw-w64-dev (>= 1.9.1) <!pkg.gnupg2.gpgvonly>,
+- libgpg-error-mingw-w64-dev (>= 1.50-4~) <!pkg.gnupg2.gpgvonly>,
++ libgpg-error-mingw-w64-dev <!pkg.gnupg2.gpgvonly>,
+  libksba-mingw-w64-dev (>= 1.6.3) <!pkg.gnupg2.gpgvonly>,
+  libnpth-mingw-w64-dev (>= 1.2) <!pkg.gnupg2.gpgvonly>,
+  libz-mingw-w64-dev <!pkg.gnupg2.gpgvonly>,
